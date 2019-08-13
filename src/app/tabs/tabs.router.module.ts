@@ -18,12 +18,12 @@ const routes: Routes = [
         ]
       },
       {
-        path: 'tab2',
+        path: 'categorias',
         children: [
           {
             path: '',
             loadChildren: () =>
-              import('../tab2/tab2.module').then(m => m.Tab2PageModule)
+              import('../pages/categorias/categorias.module').then(m => m.CategoriasPageModule)
           }
         ]
       },

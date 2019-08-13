@@ -5,7 +5,10 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
-  }
+  },
+  { path: 'categorias', loadChildren: './pages/categorias/categorias.module#CategoriasPageModule' },
+  { path: 'edit-categoria', loadChildren: './pages/edit-categoria/edit-categoria.module#EditCategoriaPageModule' },
+  { path: 'edit-categoria/:id', loadChildren: './pages/edit-categoria/edit-categoria.module#EditCategoriaPageModule' }
 ];
 @NgModule({
   imports: [

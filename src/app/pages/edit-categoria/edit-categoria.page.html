@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>EditCategoria</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list>
+    
+    <ion-item>
+      <ion-label stacked>ID</ion-label>
+      <ion-input type="text" name="id" [(ngModel)]="categoria.id"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Nome</ion-label>
+      <ion-input type="text" name="nome" [(ngModel)]="categoria.nome"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Descrição</ion-label>
+      <ion-input type="text" name="descricao" [(ngModel)]="categoria.descricao"></ion-input>
+    </ion-item>
+
+  </ion-list>
+  <ion-button block (click)="save()">Salvar</ion-button>
+</ion-content>
