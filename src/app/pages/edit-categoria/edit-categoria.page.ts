@@ -52,8 +52,8 @@ export class EditCategoriaPage implements OnInit {
       }
       else {
         this.categoria.id = 0;
-        this.categoria.nome = "Nome";
-        this.categoria.descricao = "Descricao";
+        this.categoria.nome = "";
+        this.categoria.descricao = "";
       }
       console.log('Valor de categoria id: '+ this.categoria.id);
     });

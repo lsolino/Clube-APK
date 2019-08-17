@@ -50,7 +50,7 @@ export class CategoriasPage implements OnInit {
     this.router.navigate(['/edit-categoria', id]);
   }
 
-  async removeConvidado(id: number){
+  async removeCategoria(id: number){
     const loading = await this.loadingController.create({
       message: 'Apagando'
     });

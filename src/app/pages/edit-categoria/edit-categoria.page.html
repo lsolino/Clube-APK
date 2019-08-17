@@ -1,28 +1,29 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>EditCategoria</ion-title>
+    <ion-title>Editar Categoria</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
 
   <ion-list>
-    
+    <ion-input type="hidden" name="id" [(ngModel)]="categoria.id"></ion-input>
+ 
+
     <ion-item>
-      <ion-label stacked>ID</ion-label>
-      <ion-input type="text" name="id" [(ngModel)]="categoria.id"></ion-input>
+      <ion-label stacked>Nome:</ion-label>
+      <ion-input type="text" name="nome" placeholder="Nome da Categoria" [(ngModel)]="categoria.nome"></ion-input>
     </ion-item>
 
     <ion-item>
-      <ion-label stacked>Nome</ion-label>
-      <ion-input type="text" name="nome" [(ngModel)]="categoria.nome"></ion-input>
-    </ion-item>
-
-    <ion-item>
-      <ion-label stacked>Descrição</ion-label>
-      <ion-input type="text" name="descricao" [(ngModel)]="categoria.descricao"></ion-input>
+      <ion-label stacked>Descrição:</ion-label>
+      <ion-input type="text" name="descricao" placeholder="Descrição da Categoria" [(ngModel)]="categoria.descricao"></ion-input>
     </ion-item>
 
   </ion-list>
   <ion-button block (click)="save()">Salvar</ion-button>
+  
 </ion-content>
